@@ -3,7 +3,7 @@ Feature: signin Test On Web Application
 Scenario Outline: Data driving for valid sign-in test. 
 	Given Open the application url. 
 	Then  Click on Join now for free CTA. 
-	Then Click on Sign up with face book CTA. 
+	Then Click on Sign up with Twitter account CTA. 
 	Then Enter email address as "<EmailAddress>". 
 	Then Enter the Password "<Pass>". 
 	Then Click on Login CTA. 

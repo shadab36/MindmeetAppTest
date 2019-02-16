@@ -36,17 +36,17 @@ public class Login_Step_definition extends BrowserSetup {
 		webelement.click();
 		wait.implictywait(driver);
 		Thread.sleep(2000);
-		log.info("Click on Login button");
+		log.info("Click on Join now button");
 	}
 	
-	@Then("^Click on Sign up with face book CTA\\.$")
+	@Then("^Click on Sign up with Twitter account CTA\\.$")
 	public void click_Sign_up_with_face_book() throws Throwable {
 		webelement = driver.findElement(LoginObject.TWlogin);
 		wait.implictywait(driver);
 		webelement.click();
 		wait.implictywait(driver);
 		Thread.sleep(1000);
-		log.info("Click on Login button");
+		log.info("Click on Twitter account button");
 	}
 	
 	@Then("^Enter email address as \"([^\"]*)\"\\.$")
@@ -89,7 +89,7 @@ public void click_On_Start_your_own_campaign_CTA() throws Throwable {
 	webelement = driver.findElement(LoginObject.Start_own_campaign);
 	webelement.click();
 	wait.implictywait(driver);
-	
+	log.info("Click on campaign button");	
 }
 @And("^Enter the charity amount \"([^\"]*)\"\\.$")
 public void enter_the_charity(String amount) throws Throwable {
@@ -113,7 +113,7 @@ public void enter_the_campaign_title(String arg1) throws Throwable {
 	
 	webelement.sendKeys(arg1+name);
 	wait.implictywait(driver);
-	log.info("It's entering the charity amount");
+	log.info("It's entering the charity Title");
     
 }
 
@@ -131,7 +131,7 @@ public void enter_the_Find_charity(String arg1) throws Throwable {
 	wait.implictywait(driver);
 	  a.sendKeys("Darul Qalb").build().perform();
 	  wait.implictywait(driver);
-	  
+	  log.info("It's entering the charity Find"); 
 }
 
 @And("^Enter the Description charity \"([^\"]*)\"\\.$")
@@ -144,7 +144,7 @@ public void enter_the_Description_charity(String arg1) throws Throwable {
 	wait.implictywait(driver);
 	webelement.sendKeys(arg1);
 	wait.implictywait(driver);
-	log.info("It's entering the charity amount"); 
+	log.info("It's entering the charity Description"); 
 }
 
 @And("^Click the Next CTA\\.$")
@@ -152,7 +152,7 @@ public void click_the_Next_CTA() throws Throwable {
 	webelement = driver.findElement(LoginObject.Charity_Next);
 	webelement.click();
 	wait.implictywait(driver);
-    
+	log.info("Click on Next button");	
 }
 
 @And("^Enter the Topic Name \"([^\"]*)\"\\.$")
@@ -164,7 +164,7 @@ public void enter_the_Topic_Name(String arg1) throws Throwable {
 	wait.implictywait(driver);
 	webelement.sendKeys(arg1);
 	wait.implictywait(driver);
-	log.info("It's entering the charity amount"); 
+	log.info("It's entering the Topic Name"); 
     
 }
 
@@ -173,7 +173,7 @@ public void click_on_create_CTA() throws Throwable {
 	webelement = driver.findElement(LoginObject.create);
 	webelement.click();
 	wait.implictywait(driver);  
-    
+	log.info("Click on create button");	
 }
 
 @And("^Click on Edit campaign\\.$")
@@ -181,7 +181,7 @@ public void click_on_Edit_campaign() throws Throwable {
 	webelement = driver.findElement(LoginObject.Edit_campaign);
 	webelement.click();
 	wait.implictywait(driver);    
-    
+	log.info("Click on Edit button");	
 }
 
 @And("^Click on Invite your team\\.$")
@@ -191,6 +191,7 @@ public void click_on_Invite_your_team() throws Throwable {
 	webelement.click();
 	wait.implictywait(driver);  
 	Thread.sleep(2000);
+	log.info("Click on Invite your team button");	
 }
 
 
