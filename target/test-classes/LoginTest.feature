@@ -12,7 +12,7 @@ Scenario Outline: Data driving for valid sign-in test.
 		|EmailAddress           |Pass          |
 		|test.shadab@gmail.com  | shadabsha@123|  
 		
-	Scenario Outline: Data driving for fileed valid data. 
+	Scenario Outline: create new campaign 
 		And Enter the charity amount "<Amount>". 
 		And Enter the campaign title "<Title>". 
 		And Enter the Find charity "<Name>". 
@@ -26,4 +26,11 @@ Scenario Outline: Data driving for valid sign-in test.
 			|Amount              |Title            |Name   |Description  | Topic Name   |
 			|12                  | shadab          |  qa   | test        |    test      |
 			
-	
+	Scenario: update campaign 
+	Then Back to campaigns page.
+	Then Search for existing campaigns.
+	Then click on the edit campaign option.
+	Then Update Amount.
+	Then Chhose the Campaign image.
+	Then Chhose the Avatar image.
+	Then click on save changes CTA.

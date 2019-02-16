@@ -23,5 +23,15 @@ public class LoginObject {
     public static By Edit_campaign=By.cssSelector("body > div.container > div > div > a:nth-child(3)");
     public static By invite_team=By.cssSelector("#invite-team-form>footer>button");
 	
-
+    
+    //update the Campaign 
+    public static By home_page_title=By.cssSelector("body > header > div > div > div.four.columns.logo-container > h1 > a");
+	public static By Search=By.id("q");
+	 public static By goto_existing_Campaign=By.id("campaign_list__button_primary__go");
+	public static By edit_existing_campaign=By.xpath("//a[text()='Edit campaign']");
+	public static By udate_amount=By.id("charity_campaign_goal_dollars");
+    public static By Campaign_image=By.xpath("(//label[text()='Choose image'])[1]");
+    public static By Avtar_image=By.xpath("(//label[text()='Choose image'])[2]");
+    public static By save_changes=By.xpath("//button[text()='Save changes']");
+   
 }

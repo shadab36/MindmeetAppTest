@@ -12,9 +12,8 @@
         "steps": [
           {
             "result": {
-              "duration": 4473651000,
-              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d72.0.3626.109)\n  (Driver info: chromedriver\u003d73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform\u003dWindows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027AMW-G1\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\\Users\\ALMOIN~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53094}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.109, webStorageEnabled: true}\nSession ID: d9a741e798a4e48de9507a19f13ca815\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:271)\r\n\tat browserSetup.loginStep.Login_Step_definition.open_the_website_url(Login_Step_definition.java:26)\r\n\tat ✽.Given Open the application url.(src/test/resources/LoginTest.feature:4)\r\n",
-              "status": "failed"
+              "duration": 7089957900,
+              "status": "passed"
             },
             "line": 4,
             "name": "Open the application url.",
@@ -25,7 +24,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2375849700,
+              "status": "passed"
             },
             "line": 5,
             "name": "Click on Join now for free CTA.",
@@ -36,10 +36,11 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 4538317300,
+              "status": "passed"
             },
             "line": 6,
-            "name": "Click on Sign up with face book CTA.",
+            "name": "Click on Sign up with Twitter account CTA.",
             "match": {
               "location": "Login_Step_definition.click_Sign_up_with_face_book()"
             },
@@ -47,7 +48,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 430104400,
+              "status": "passed"
             },
             "line": 7,
             "name": "Enter email address as \"test.shadab@gmail.com\".",
@@ -67,7 +69,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 377304000,
+              "status": "passed"
             },
             "line": 8,
             "name": "Enter the Password \"shadabsha@123\".",
@@ -87,7 +90,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 7522623300,
+              "status": "passed"
             },
             "line": 9,
             "name": "Click on Login CTA.",
@@ -98,7 +102,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1979869100,
+              "status": "passed"
             },
             "line": 10,
             "name": "Click On Start your own campaign CTA.",
@@ -117,17 +122,16 @@
       },
       {
         "line": 27,
-        "name": "Data driving for fileed valid data.",
+        "name": "create new campaign",
         "description": "",
-        "id": "signin-test-on-web-application;data-driving-for-fileed-valid-data.;;2",
+        "id": "signin-test-on-web-application;create-new-campaign;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 6087354100,
-              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d72.0.3626.109)\n  (Driver info: chromedriver\u003d73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform\u003dWindows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027AMW-G1\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\\Users\\ALMOIN~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53094}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.109, webStorageEnabled: true}\nSession ID: d9a741e798a4e48de9507a19f13ca815\n*** Element info: {Using\u003did, value\u003dcharity_campaign_goal_dollars}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)\r\n\tat browserSetup.loginStep.Login_Step_definition.enter_the_charity(Login_Step_definition.java:96)\r\n\tat ✽.And Enter the charity amount \"12\".(src/test/resources/LoginTest.feature:16)\r\n",
-              "status": "failed"
+              "duration": 648637700,
+              "status": "passed"
             },
             "line": 16,
             "name": "Enter the charity amount \"12\".",
@@ -147,7 +151,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 390714500,
+              "status": "passed"
             },
             "line": 17,
             "name": "Enter the campaign title \"shadab\".",
@@ -167,7 +172,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 577435100,
+              "status": "passed"
             },
             "line": 18,
             "name": "Enter the Find charity \"qa\".",
@@ -187,7 +193,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 375719700,
+              "status": "passed"
             },
             "line": 19,
             "name": "Enter the Description charity \"test\".",
@@ -207,7 +214,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 194457600,
+              "status": "passed"
             },
             "line": 20,
             "name": "Click the Next CTA.",
@@ -218,7 +226,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 407953600,
+              "status": "passed"
             },
             "line": 21,
             "name": "Enter the Topic Name \"test\".",
@@ -238,7 +247,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1325432700,
+              "status": "passed"
             },
             "line": 22,
             "name": "Click on create CTA.",
@@ -249,7 +259,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1514003100,
+              "status": "passed"
             },
             "line": 23,
             "name": "Click on Edit campaign.",
@@ -260,7 +271,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2413723100,
+              "status": "passed"
             },
             "line": 24,
             "name": "Click on Invite your team.",
@@ -268,6 +280,100 @@
               "location": "Login_Step_definition.click_on_Invite_your_team()"
             },
             "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "update campaign",
+        "description": "",
+        "id": "signin-test-on-web-application;update-campaign",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2328381300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Back to campaigns page.",
+            "match": {
+              "location": "Login_Step_definition.back_to_campaigns_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6715618700,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Search for existing campaigns.",
+            "match": {
+              "location": "Login_Step_definition.search_for_existing_campaigns()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1070289800,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "click on the edit campaign option.",
+            "match": {
+              "location": "Login_Step_definition.click_on_the_edit_campaign_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 573361700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Update Amount.",
+            "match": {
+              "location": "Login_Step_definition.update_Amount()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11734059000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Chhose the Campaign image.",
+            "match": {
+              "location": "Login_Step_definition.chhose_the_Campaign_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6959822300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Chhose the Avatar image.",
+            "match": {
+              "location": "Login_Step_definition.chhose_the_Avatar_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4374564500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "click on save changes CTA.",
+            "match": {
+              "location": "Login_Step_definition.click_on_save_changes_CTA()"
+            },
+            "keyword": "Then "
           }
         ]
       }

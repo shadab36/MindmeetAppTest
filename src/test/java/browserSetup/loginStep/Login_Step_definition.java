@@ -1,14 +1,18 @@
 package browserSetup.loginStep;
 
 
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import ObjectRepository.LoginObject;
+import ObjectRepository.WindowHandle;
 import browserSetup.BrowserSetup;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -19,6 +23,7 @@ public class Login_Step_definition extends BrowserSetup {
 	PerformAction wait = new PerformAction();
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Random rad = new Random();
+	public static String campaign_title;
 	String name = "" + rad.nextInt(1000);
 	// Open web site URl
 	@Given("^Open the application url\\.$")
@@ -109,10 +114,11 @@ public void enter_the_campaign_title(String arg1) throws Throwable {
 	wait.implictywait(driver);
 	webelement.clear();
 	wait.implictywait(driver);
-	
-	
-	webelement.sendKeys(arg1+name);
+
+	campaign_title=arg1+name;
 	wait.implictywait(driver);
+			webelement.sendKeys(campaign_title);
+			wait.implictywait(driver);
 	log.info("It's entering the charity Title");
     
 }
@@ -192,6 +198,89 @@ public void click_on_Invite_your_team() throws Throwable {
 	wait.implictywait(driver);  
 	Thread.sleep(2000);
 	log.info("Click on Invite your team button");	
+}
+
+@Then("^Back to campaigns page\\.$")
+public void back_to_campaigns_page() throws Throwable {
+	webelement = driver.findElement(LoginObject.home_page_title);
+	webelement.click();
+	wait.implictywait(driver);  
+	log.info("Click on title logo link");	
+	Thread.sleep(1000);
+}
+
+@Then("^Search for existing campaigns\\.$")
+public void search_for_existing_campaigns() throws Throwable {
+	webelement = driver.findElement(LoginObject.Search);
+	webelement.click();
+	wait.implictywait(driver);
+	webelement.clear();
+	wait.implictywait(driver);
+	webelement.sendKeys(campaign_title);
+	wait.implictywait(driver);
+	Thread.sleep(1000);
+	
+	webelement = driver.findElement(LoginObject.goto_existing_Campaign);
+	webelement.click();
+	wait.implictywait(driver);
+
+	List<WebElement> list = driver.findElements(By.cssSelector(".avatar"));
+	int randomValue = rad.nextInt(list.size()); // Getting a random value that is between 0 and (list's size)-1
+	Thread.sleep(1000);
+	list.get(randomValue).click();
+	Thread.sleep(1000);
+	
+	  
+    
+}
+
+@Then("^click on the edit campaign option\\.$")
+public void click_on_the_edit_campaign_option() throws Throwable {
+    
+	webelement = driver.findElement(LoginObject.edit_existing_campaign);
+	webelement.click();
+	wait.implictywait(driver);
+}
+
+@Then("^Update Amount\\.$")
+public void update_Amount() throws Throwable {
+	webelement = driver.findElement(LoginObject.udate_amount);
+	webelement.click();
+	wait.implictywait(driver); 
+	webelement.clear();
+	wait.implictywait(driver);
+	webelement.sendKeys("15");
+	wait.implictywait(driver);
+    
+}
+
+@Then("^Chhose the Campaign image\\.$")
+public void chhose_the_Campaign_image() throws Throwable {
+	webelement = driver.findElement(LoginObject.Campaign_image);
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	webelement.click();
+	Thread.sleep(1000);
+	Thread.sleep(1000);
+	WindowHandle.window();
+}
+
+@Then("^Chhose the Avatar image\\.$")
+public void chhose_the_Avatar_image() throws Throwable {
+    
+	webelement = driver.findElement(LoginObject.Avtar_image);
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	webelement.click();
+	Thread.sleep(1000);
+
+	WindowHandle.window(); 
+}
+
+@Then("^click on save changes CTA\\.$")
+public void click_on_save_changes_CTA() throws Throwable {
+	webelement = driver.findElement(LoginObject.save_changes);
+	webelement.click();
+	wait.implictywait(driver); 
+    Thread.sleep(2000);
 }
 
 
