@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7089957900,
+              "duration": 30558449600,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 2375849700,
+              "duration": 5128751700,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 4538317300,
+              "duration": 6571465300,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 430104400,
+              "duration": 397568200,
               "status": "passed"
             },
             "line": 7,
@@ -69,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 377304000,
+              "duration": 311698900,
               "status": "passed"
             },
             "line": 8,
@@ -90,7 +90,7 @@
           },
           {
             "result": {
-              "duration": 7522623300,
+              "duration": 6697986100,
               "status": "passed"
             },
             "line": 9,
@@ -102,7 +102,7 @@
           },
           {
             "result": {
-              "duration": 1979869100,
+              "duration": 17762568500,
               "status": "passed"
             },
             "line": 10,
@@ -121,7 +121,7 @@
         ]
       },
       {
-        "line": 27,
+        "line": 25,
         "name": "create new campaign",
         "description": "",
         "id": "signin-test-on-web-application;create-new-campaign;;2",
@@ -130,15 +130,15 @@
         "steps": [
           {
             "result": {
-              "duration": 648637700,
+              "duration": 830119800,
               "status": "passed"
             },
             "line": 16,
-            "name": "Enter the charity amount \"12\".",
+            "name": "Enter the charity amount \"15\".",
             "match": {
               "arguments": [
                 {
-                  "val": "12",
+                  "val": "15",
                   "offset": 26
                 }
               ],
@@ -151,19 +151,19 @@
           },
           {
             "result": {
-              "duration": 390714500,
+              "duration": 410242000,
               "status": "passed"
             },
             "line": 17,
-            "name": "Enter the campaign title \"shadab\".",
+            "name": "Enter the Campaign hashtags \"shadab\".",
             "match": {
               "arguments": [
                 {
                   "val": "shadab",
-                  "offset": 26
+                  "offset": 29
                 }
               ],
-              "location": "Login_Step_definition.enter_the_campaign_title(String)"
+              "location": "Login_Step_definition.enter_the_Campaign_hashtags(String)"
             },
             "matchedColumns": [
               1
@@ -172,19 +172,19 @@
           },
           {
             "result": {
-              "duration": 577435100,
+              "duration": 475778800,
               "status": "passed"
             },
             "line": 18,
-            "name": "Enter the Find charity \"qa\".",
+            "name": "Enter the Your rate for metting \"2\".",
             "match": {
               "arguments": [
                 {
-                  "val": "qa",
-                  "offset": 24
+                  "val": "2",
+                  "offset": 33
                 }
               ],
-              "location": "Login_Step_definition.enter_the_Find_charity(String)"
+              "location": "Login_Step_definition.enter_the_Your_rate_for_metting(String)"
             },
             "matchedColumns": [
               2
@@ -193,19 +193,43 @@
           },
           {
             "result": {
-              "duration": 375719700,
+              "duration": 3573261800,
               "status": "passed"
             },
             "line": 19,
-            "name": "Enter the Description charity \"test\".",
+            "name": "Click on Create campaign CTA.",
+            "match": {
+              "location": "Login_Step_definition.click_on_Create_campaign_CTA()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23469880700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on Invite your team.",
+            "match": {
+              "location": "Login_Step_definition.click_on_Invite_your_team()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 412672700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter one or more email addresses \"test@gmail.com\".",
             "match": {
               "arguments": [
                 {
-                  "val": "test",
-                  "offset": 31
+                  "val": "test@gmail.com",
+                  "offset": 35
                 }
               ],
-              "location": "Login_Step_definition.enter_the_Description_charity(String)"
+              "location": "Login_Step_definition.enter_one_or_more_email_addresses(String)"
             },
             "matchedColumns": [
               3
@@ -214,77 +238,20 @@
           },
           {
             "result": {
-              "duration": 194457600,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Click the Next CTA.",
-            "match": {
-              "location": "Login_Step_definition.click_the_Next_CTA()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 407953600,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Enter the Topic Name \"test\".",
-            "match": {
-              "arguments": [
-                {
-                  "val": "test",
-                  "offset": 22
-                }
-              ],
-              "location": "Login_Step_definition.enter_the_Topic_Name(String)"
-            },
-            "matchedColumns": [
-              4
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1325432700,
+              "duration": 230100200,
               "status": "passed"
             },
             "line": 22,
-            "name": "Click on create CTA.",
+            "name": "Click invite the more user.",
             "match": {
-              "location": "Login_Step_definition.click_on_create_CTA()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1514003100,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Click on Edit campaign.",
-            "match": {
-              "location": "Login_Step_definition.click_on_Edit_campaign()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2413723100,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Click on Invite your team.",
-            "match": {
-              "location": "Login_Step_definition.click_on_Invite_your_team()"
+              "location": "Login_Step_definition.click_invite_the_more_user()"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "line": 29,
+        "line": 27,
         "name": "update campaign",
         "description": "",
         "id": "signin-test-on-web-application;update-campaign",
@@ -293,22 +260,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2328381300,
+              "duration": 10214496000,
               "status": "passed"
             },
-            "line": 30,
-            "name": "Back to campaigns page.",
-            "match": {
-              "location": "Login_Step_definition.back_to_campaigns_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 6715618700,
-              "status": "passed"
-            },
-            "line": 31,
+            "line": 28,
             "name": "Search for existing campaigns.",
             "match": {
               "location": "Login_Step_definition.search_for_existing_campaigns()"
@@ -317,10 +272,10 @@
           },
           {
             "result": {
-              "duration": 1070289800,
+              "duration": 1321159500,
               "status": "passed"
             },
-            "line": 32,
+            "line": 29,
             "name": "click on the edit campaign option.",
             "match": {
               "location": "Login_Step_definition.click_on_the_edit_campaign_option()"
@@ -329,11 +284,11 @@
           },
           {
             "result": {
-              "duration": 573361700,
+              "duration": 1199446800,
               "status": "passed"
             },
-            "line": 33,
-            "name": "Update Amount.",
+            "line": 30,
+            "name": "verify the charity Amount.",
             "match": {
               "location": "Login_Step_definition.update_Amount()"
             },
@@ -341,10 +296,22 @@
           },
           {
             "result": {
-              "duration": 11734059000,
-              "status": "passed"
+              "duration": 83955400,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cSHADAB[500]\u003e but was:\u003cSHADAB[12\nclose]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat browserSetup.loginStep.Login_Step_definition.verify_the_Campaign_hashtags_name(Login_Step_definition.java:245)\r\n\tat ✽.Then verify the Campaign hashtags name.(src/test/resources/LoginTest.feature:31)\r\n",
+              "status": "failed"
             },
-            "line": 34,
+            "line": 31,
+            "name": "verify the Campaign hashtags name.",
+            "match": {
+              "location": "Login_Step_definition.verify_the_Campaign_hashtags_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
             "name": "Chhose the Campaign image.",
             "match": {
               "location": "Login_Step_definition.chhose_the_Campaign_image()"
@@ -353,22 +320,9 @@
           },
           {
             "result": {
-              "duration": 6959822300,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 35,
-            "name": "Chhose the Avatar image.",
-            "match": {
-              "location": "Login_Step_definition.chhose_the_Avatar_image()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4374564500,
-              "status": "passed"
-            },
-            "line": 36,
+            "line": 33,
             "name": "click on save changes CTA.",
             "match": {
               "location": "Login_Step_definition.click_on_save_changes_CTA()"

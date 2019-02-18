@@ -139,21 +139,21 @@ formatter.match({
   "location": "Login_Step_definition.open_the_website_url()"
 });
 formatter.result({
-  "duration": 7089957900,
+  "duration": 30558449600,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_definition.click_on_Login_button()"
 });
 formatter.result({
-  "duration": 2375849700,
+  "duration": 5128751700,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_definition.click_Sign_up_with_face_book()"
 });
 formatter.result({
-  "duration": 4538317300,
+  "duration": 6571465300,
   "status": "passed"
 });
 formatter.match({
@@ -166,7 +166,7 @@ formatter.match({
   "location": "Login_Step_definition.enter_user_email_address_as(String)"
 });
 formatter.result({
-  "duration": 430104400,
+  "duration": 397568200,
   "status": "passed"
 });
 formatter.match({
@@ -179,21 +179,21 @@ formatter.match({
   "location": "Login_Step_definition.enter_the_Password(String)"
 });
 formatter.result({
-  "duration": 377304000,
+  "duration": 311698900,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_definition.click__Login_button()"
 });
 formatter.result({
-  "duration": 7522623300,
+  "duration": 6697986100,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_definition.click_On_Start_your_own_campaign_CTA()"
 });
 formatter.result({
-  "duration": 1979869100,
+  "duration": 17762568500,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -211,46 +211,36 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "Enter the campaign title \"\u003cTitle\u003e\".",
+  "name": "Enter the Campaign hashtags \"\u003cCampaign hashtags\u003e\".",
   "keyword": "And "
 });
 formatter.step({
   "line": 18,
-  "name": "Enter the Find charity \"\u003cName\u003e\".",
+  "name": "Enter the Your rate for metting \"\u003cYour rate\u003e\".",
   "keyword": "And "
 });
 formatter.step({
   "line": 19,
-  "name": "Enter the Description charity \"\u003cDescription\u003e\".",
+  "name": "Click on Create campaign CTA.",
   "keyword": "And "
 });
 formatter.step({
   "line": 20,
-  "name": "Click the Next CTA.",
+  "name": "Click on Invite your team.",
   "keyword": "And "
 });
 formatter.step({
   "line": 21,
-  "name": "Enter the Topic Name \"\u003cTopic Name\u003e\".",
+  "name": "Enter one or more email addresses \"\u003cEmail Address\u003e\".",
   "keyword": "And "
 });
 formatter.step({
   "line": 22,
-  "name": "Click on create CTA.",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "Click on Edit campaign.",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 24,
-  "name": "Click on Invite your team.",
+  "name": "Click invite the more user.",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 25,
+  "line": 23,
   "name": "",
   "description": "",
   "id": "signin-test-on-web-application;create-new-campaign;",
@@ -258,30 +248,30 @@ formatter.examples({
     {
       "cells": [
         "Amount",
-        "Title",
-        "Name",
-        "Description",
+        "Campaign hashtags",
+        "Your rate",
+        "Email Address",
         "Topic Name"
       ],
-      "line": 26,
+      "line": 24,
       "id": "signin-test-on-web-application;create-new-campaign;;1"
     },
     {
       "cells": [
-        "12",
+        "15",
         "shadab",
-        "qa",
-        "test",
+        "2",
+        "test@gmail.com",
         "test"
       ],
-      "line": 27,
+      "line": 25,
       "id": "signin-test-on-web-application;create-new-campaign;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 27,
+  "line": 25,
   "name": "create new campaign",
   "description": "",
   "id": "signin-test-on-web-application;create-new-campaign;;2",
@@ -290,7 +280,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 16,
-  "name": "Enter the charity amount \"12\".",
+  "name": "Enter the charity amount \"15\".",
   "matchedColumns": [
     0
   ],
@@ -298,7 +288,7 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "Enter the campaign title \"shadab\".",
+  "name": "Enter the Campaign hashtags \"shadab\".",
   "matchedColumns": [
     1
   ],
@@ -306,7 +296,7 @@ formatter.step({
 });
 formatter.step({
   "line": 18,
-  "name": "Enter the Find charity \"qa\".",
+  "name": "Enter the Your rate for metting \"2\".",
   "matchedColumns": [
     2
   ],
@@ -314,135 +304,102 @@ formatter.step({
 });
 formatter.step({
   "line": 19,
-  "name": "Enter the Description charity \"test\".",
+  "name": "Click on Create campaign CTA.",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "Click on Invite your team.",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "Enter one or more email addresses \"test@gmail.com\".",
   "matchedColumns": [
     3
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
-  "name": "Click the Next CTA.",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "Enter the Topic Name \"test\".",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "And "
-});
-formatter.step({
   "line": 22,
-  "name": "Click on create CTA.",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "Click on Edit campaign.",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 24,
-  "name": "Click on Invite your team.",
+  "name": "Click invite the more user.",
   "keyword": "And "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "12",
+      "val": "15",
       "offset": 26
     }
   ],
   "location": "Login_Step_definition.enter_the_charity(String)"
 });
 formatter.result({
-  "duration": 648637700,
+  "duration": 830119800,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "shadab",
-      "offset": 26
+      "offset": 29
     }
   ],
-  "location": "Login_Step_definition.enter_the_campaign_title(String)"
+  "location": "Login_Step_definition.enter_the_Campaign_hashtags(String)"
 });
 formatter.result({
-  "duration": 390714500,
+  "duration": 410242000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "qa",
-      "offset": 24
+      "val": "2",
+      "offset": 33
     }
   ],
-  "location": "Login_Step_definition.enter_the_Find_charity(String)"
+  "location": "Login_Step_definition.enter_the_Your_rate_for_metting(String)"
 });
 formatter.result({
-  "duration": 577435100,
+  "duration": 475778800,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "test",
-      "offset": 31
-    }
-  ],
-  "location": "Login_Step_definition.enter_the_Description_charity(String)"
+  "location": "Login_Step_definition.click_on_Create_campaign_CTA()"
 });
 formatter.result({
-  "duration": 375719700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Login_Step_definition.click_the_Next_CTA()"
-});
-formatter.result({
-  "duration": 194457600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "test",
-      "offset": 22
-    }
-  ],
-  "location": "Login_Step_definition.enter_the_Topic_Name(String)"
-});
-formatter.result({
-  "duration": 407953600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Login_Step_definition.click_on_create_CTA()"
-});
-formatter.result({
-  "duration": 1325432700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Login_Step_definition.click_on_Edit_campaign()"
-});
-formatter.result({
-  "duration": 1514003100,
+  "duration": 3573261800,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_definition.click_on_Invite_your_team()"
 });
 formatter.result({
-  "duration": 2413723100,
+  "duration": 23469880700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "test@gmail.com",
+      "offset": 35
+    }
+  ],
+  "location": "Login_Step_definition.enter_one_or_more_email_addresses(String)"
+});
+formatter.result({
+  "duration": 412672700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Login_Step_definition.click_invite_the_more_user()"
+});
+formatter.result({
+  "duration": 230100200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 29,
+  "line": 27,
   "name": "update campaign",
   "description": "",
   "id": "signin-test-on-web-application;update-campaign",
@@ -450,87 +407,74 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 30,
-  "name": "Back to campaigns page.",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 31,
+  "line": 28,
   "name": "Search for existing campaigns.",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 32,
+  "line": 29,
   "name": "click on the edit campaign option.",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 33,
-  "name": "Update Amount.",
+  "line": 30,
+  "name": "verify the charity Amount.",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 34,
+  "line": 31,
+  "name": "verify the Campaign hashtags name.",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 32,
   "name": "Chhose the Campaign image.",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 35,
-  "name": "Chhose the Avatar image.",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 36,
+  "line": 33,
   "name": "click on save changes CTA.",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "Login_Step_definition.back_to_campaigns_page()"
-});
-formatter.result({
-  "duration": 2328381300,
-  "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_definition.search_for_existing_campaigns()"
 });
 formatter.result({
-  "duration": 6715618700,
+  "duration": 10214496000,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_definition.click_on_the_edit_campaign_option()"
 });
 formatter.result({
-  "duration": 1070289800,
+  "duration": 1321159500,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_definition.update_Amount()"
 });
 formatter.result({
-  "duration": 573361700,
+  "duration": 1199446800,
   "status": "passed"
+});
+formatter.match({
+  "location": "Login_Step_definition.verify_the_Campaign_hashtags_name()"
+});
+formatter.result({
+  "duration": 83955400,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003cSHADAB[500]\u003e but was:\u003cSHADAB[12\nclose]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat browserSetup.loginStep.Login_Step_definition.verify_the_Campaign_hashtags_name(Login_Step_definition.java:245)\r\n\tat ✽.Then verify the Campaign hashtags name.(src/test/resources/LoginTest.feature:31)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Login_Step_definition.chhose_the_Campaign_image()"
 });
 formatter.result({
-  "duration": 11734059000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Login_Step_definition.chhose_the_Avatar_image()"
-});
-formatter.result({
-  "duration": 6959822300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Login_Step_definition.click_on_save_changes_CTA()"
 });
 formatter.result({
-  "duration": 4374564500,
-  "status": "passed"
+  "status": "skipped"
 });
 });

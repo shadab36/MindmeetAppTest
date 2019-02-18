@@ -1,16 +1,13 @@
 package browserSetup.loginStep;
 
 
-import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-
 import ObjectRepository.LoginObject;
 import ObjectRepository.WindowHandle;
 import browserSetup.BrowserSetup;
@@ -23,22 +20,26 @@ public class Login_Step_definition extends BrowserSetup {
 	PerformAction wait = new PerformAction();
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Random rad = new Random();
-	public static String campaign_title;
+	public static String campaign_hashtags_name;
 	String name = "" + rad.nextInt(1000);
+	public static String Amount;
 	// Open web site URl
 	@Given("^Open the application url\\.$")
 	public void open_the_website_url() throws Throwable {
 		driver.get(AppURL);
 	    driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		log.info("It's opening the website URL");
+		Thread.sleep(2000);
 	}
-
 	
 	@Then("^Click on Join now for free CTA\\.$")
 	public void click_on_Login_button() throws Throwable {
-		webelement = driver.findElement(LoginObject.join);
+		WebElement et= driver.findElement(LoginObject.join);
+		js.executeScript("arguments[0].scrollIntoView(true);", et);
+		Thread.sleep(500); 
 		wait.implictywait(driver);
-		webelement.click();
+		js.executeScript("arguments[0].click();", et);
+		wait.implictywait(driver);
 		wait.implictywait(driver);
 		Thread.sleep(2000);
 		log.info("Click on Join now button");
@@ -91,6 +92,9 @@ public class Login_Step_definition extends BrowserSetup {
 
 @Then("^Click On Start your own campaign CTA\\.$")
 public void click_On_Start_your_own_campaign_CTA() throws Throwable {
+	webelement = driver.findElement(LoginObject.campaign);
+	webelement.click();
+	wait.implictywait(driver);
 	webelement = driver.findElement(LoginObject.Start_own_campaign);
 	webelement.click();
 	wait.implictywait(driver);
@@ -103,92 +107,57 @@ public void enter_the_charity(String amount) throws Throwable {
 	wait.implictywait(driver);
 	webelement.clear();
 	wait.implictywait(driver);
-	webelement.sendKeys(amount);
+	Amount=amount;
+	webelement.sendKeys(Amount);
 	wait.implictywait(driver);
 	log.info("It's entering the charity amount");
 }
-@And("^Enter the campaign title \"([^\"]*)\"\\.$")
-public void enter_the_campaign_title(String arg1) throws Throwable {
-	webelement = driver.findElement(LoginObject.Charity_title);
+@And("^Enter the Campaign hashtags \"([^\"]*)\"\\.$")
+public void enter_the_Campaign_hashtags(String arg1) throws Throwable {
+	webelement = driver.findElement(LoginObject.Charity_hashtag);
 	webelement.click();
 	wait.implictywait(driver);
 	webelement.clear();
 	wait.implictywait(driver);
 
-	campaign_title=arg1+name;
+	campaign_hashtags_name=arg1+name;
 	wait.implictywait(driver);
-			webelement.sendKeys(campaign_title);
+			webelement.sendKeys(campaign_hashtags_name);
 			wait.implictywait(driver);
 	log.info("It's entering the charity Title");
     
 }
 
-@And("^Enter the Find charity \"([^\"]*)\"\\.$")
-public void enter_the_Find_charity(String arg1) throws Throwable {
-	webelement = driver.findElement(LoginObject.Find_Charity);
+@And("^Enter the Your rate for metting \"([^\"]*)\"\\.$")
+public void enter_the_Your_rate_for_metting(String arg1) throws Throwable {
+	webelement = driver.findElement(LoginObject.your_rate_metting);
 	webelement.click();
 	wait.implictywait(driver);
 	webelement.clear();
 	wait.implictywait(driver);
 	webelement.sendKeys(arg1);
 	wait.implictywait(driver);
-	Actions a=new Actions (driver);
-	a.click(webelement).build().perform();
-	wait.implictywait(driver);
-	  a.sendKeys("Darul Qalb").build().perform();
-	  wait.implictywait(driver);
-	  log.info("It's entering the charity Find"); 
+	
+//	Actions a=new Actions (driver);
+//	a.click(webelement).build().perform();
+//	wait.implictywait(driver);
+//	  a.sendKeys("Darul Qalb").build().perform();
+//	  wait.implictywait(driver);
+//	  log.info("It's entering the charity Find"); 
 }
 
-@And("^Enter the Description charity \"([^\"]*)\"\\.$")
-public void enter_the_Description_charity(String arg1) throws Throwable {
-    
-	webelement = driver.findElement(LoginObject.Charity_Description);
-	webelement.click();
-	wait.implictywait(driver);
-	webelement.clear();
-	wait.implictywait(driver);
-	webelement.sendKeys(arg1);
-	wait.implictywait(driver);
-	log.info("It's entering the charity Description"); 
-}
 
-@And("^Click the Next CTA\\.$")
-public void click_the_Next_CTA() throws Throwable {
-	webelement = driver.findElement(LoginObject.Charity_Next);
-	webelement.click();
-	wait.implictywait(driver);
-	log.info("Click on Next button");	
-}
 
-@And("^Enter the Topic Name \"([^\"]*)\"\\.$")
-public void enter_the_Topic_Name(String arg1) throws Throwable {
-	webelement = driver.findElement(LoginObject.Enter_topic);
-	webelement.click();
-	wait.implictywait(driver);
-	webelement.clear();
-	wait.implictywait(driver);
-	webelement.sendKeys(arg1);
-	wait.implictywait(driver);
-	log.info("It's entering the Topic Name"); 
-    
-}
 
-@And("^Click on create CTA\\.$")
-public void click_on_create_CTA() throws Throwable {
+@And("^Click on Create campaign CTA\\.$")
+public void click_on_Create_campaign_CTA() throws Throwable {
 	webelement = driver.findElement(LoginObject.create);
 	webelement.click();
 	wait.implictywait(driver);  
 	log.info("Click on create button");	
 }
 
-@And("^Click on Edit campaign\\.$")
-public void click_on_Edit_campaign() throws Throwable {
-	webelement = driver.findElement(LoginObject.Edit_campaign);
-	webelement.click();
-	wait.implictywait(driver);    
-	log.info("Click on Edit button");	
-}
+
 
 @And("^Click on Invite your team\\.$")
 public void click_on_Invite_your_team() throws Throwable {
@@ -199,40 +168,50 @@ public void click_on_Invite_your_team() throws Throwable {
 	Thread.sleep(2000);
 	log.info("Click on Invite your team button");	
 }
-
-@Then("^Back to campaigns page\\.$")
-public void back_to_campaigns_page() throws Throwable {
-	webelement = driver.findElement(LoginObject.home_page_title);
-	webelement.click();
-	wait.implictywait(driver);  
-	log.info("Click on title logo link");	
-	Thread.sleep(1000);
-}
-
-@Then("^Search for existing campaigns\\.$")
-public void search_for_existing_campaigns() throws Throwable {
-	webelement = driver.findElement(LoginObject.Search);
+@And("^Enter one or more email addresses \"([^\"]*)\"\\.$")
+public void enter_one_or_more_email_addresses(String arg1) throws Throwable {
+	webelement = driver.findElement(LoginObject.enter_more_email);
 	webelement.click();
 	wait.implictywait(driver);
 	webelement.clear();
 	wait.implictywait(driver);
-	webelement.sendKeys(campaign_title);
-	wait.implictywait(driver);
-	Thread.sleep(1000);
-	
-	webelement = driver.findElement(LoginObject.goto_existing_Campaign);
-	webelement.click();
+	webelement.sendKeys(arg1);
 	wait.implictywait(driver);
 
-	List<WebElement> list = driver.findElements(By.cssSelector(".avatar"));
-	int randomValue = rad.nextInt(list.size()); // Getting a random value that is between 0 and (list's size)-1
-	Thread.sleep(1000);
-	list.get(randomValue).click();
-	Thread.sleep(1000);
-	
-	  
-    
 }
+
+@And("^Click invite the more user\\.$")
+public void click_invite_the_more_user() throws Throwable {
+	webelement = driver.findElement(LoginObject.invite_team_more);
+	webelement.click();
+	wait.implictywait(driver);
+	webelement.click();
+	
+}
+
+@Then("^Search for existing campaigns\\.$")
+public void search_for_existing_campaigns() throws Throwable {
+	
+	webelement = driver.findElement(LoginObject.campaign);
+	webelement.click();
+	wait.implictywait(driver);
+	webelement = driver.findElement(LoginObject.Search_exitsing);
+	webelement.click();
+	wait.implictywait(driver);
+	webelement.clear();
+	wait.implictywait(driver);
+	webelement.sendKeys(campaign_hashtags_name);
+	wait.implictywait(driver);
+	Thread.sleep(2000);
+	
+	
+
+	webelement=driver.findElement(By.cssSelector(".predictive-target ul li:nth-child(1)>a img"));
+	webelement.click();
+	wait.implictywait(driver);
+	Thread.sleep(1000);
+}
+
 
 @Then("^click on the edit campaign option\\.$")
 public void click_on_the_edit_campaign_option() throws Throwable {
@@ -242,37 +221,36 @@ public void click_on_the_edit_campaign_option() throws Throwable {
 	wait.implictywait(driver);
 }
 
-@Then("^Update Amount\\.$")
+@Then("^verify the charity Amount\\.$")
 public void update_Amount() throws Throwable {
-	webelement = driver.findElement(LoginObject.udate_amount);
-	webelement.click();
-	wait.implictywait(driver); 
-	webelement.clear();
 	wait.implictywait(driver);
-	webelement.sendKeys("15");
+	String Amount_val = driver.findElement(LoginObject.udate_amount).getAttribute("value");
+    System.err.println("qa amount" +Amount_val);
 	wait.implictywait(driver);
-    
+	Assert.assertEquals(Amount, Amount_val);
+	wait.implictywait(driver);
+	Thread.sleep(1000);
+    System.err.println("qa2 amount" +Amount);
 }
 
+@Then("^verify the Campaign hashtags name\\.$")
+public void verify_the_Campaign_hashtags_name() throws Throwable {
+	
+	String Verify_hashtags_name = driver.findElement(By.cssSelector(".chip")).getText();
+	System.err.println("test"+ Verify_hashtags_name);
+	System.err.println("test1"+ campaign_hashtags_name.toUpperCase());
+//	Assert.assertEquals(campaign_hashtags_name.toUpperCase(), Verify_hashtags_name);
+	wait.implictywait(driver);
+
+	
+}
 @Then("^Chhose the Campaign image\\.$")
 public void chhose_the_Campaign_image() throws Throwable {
 	webelement = driver.findElement(LoginObject.Campaign_image);
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	webelement.click();
 	Thread.sleep(1000);
-	Thread.sleep(1000);
 	WindowHandle.window();
-}
-
-@Then("^Chhose the Avatar image\\.$")
-public void chhose_the_Avatar_image() throws Throwable {
-    
-	webelement = driver.findElement(LoginObject.Avtar_image);
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	webelement.click();
-	Thread.sleep(1000);
-
-	WindowHandle.window(); 
 }
 
 @Then("^click on save changes CTA\\.$")
@@ -282,6 +260,7 @@ public void click_on_save_changes_CTA() throws Throwable {
 	wait.implictywait(driver); 
     Thread.sleep(2000);
 }
+
 
 
 }

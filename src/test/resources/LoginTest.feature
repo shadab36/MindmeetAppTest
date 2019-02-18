@@ -14,23 +14,21 @@ Scenario Outline: Data driving for valid sign-in test.
 		
 	Scenario Outline: create new campaign 
 		And Enter the charity amount "<Amount>". 
-		And Enter the campaign title "<Title>". 
-		And Enter the Find charity "<Name>". 
-		And Enter the Description charity "<Description>". 
-		And Click the Next CTA. 
-		And Enter the Topic Name "<Topic Name>". 
-		And Click on create CTA. 
-		And Click on Edit campaign. 
+		And Enter the Campaign hashtags "<Campaign hashtags>". 
+		And Enter the Your rate for metting "<Your rate>". 
+		And Click on Create campaign CTA. 
 		And Click on Invite your team. 
+		And Enter one or more email addresses "<Email Address>". 
+		And  Click invite the more user. 
 		Examples: 
-			|Amount              |Title            |Name   |Description  | Topic Name   |
-			|12                  | shadab          |  qa   | test        |    test      |
+			|Amount              |Campaign hashtags      |Your rate   |Email Address            | Topic Name   |
+			|15                  | shadab                |  2         | test@gmail.com          |    test      |
 			
-	Scenario: update campaign 
-	Then Back to campaigns page.
-	Then Search for existing campaigns.
-	Then click on the edit campaign option.
-	Then Update Amount.
-	Then Chhose the Campaign image.
-	Then Chhose the Avatar image.
-	Then click on save changes CTA.
+		Scenario: update campaign 
+			Then Search for existing campaigns. 
+			Then click on the edit campaign option. 
+			Then verify the charity Amount. 
+			Then verify the Campaign hashtags name. 
+			Then Chhose the Campaign image. 
+			Then click on save changes CTA. 
+			

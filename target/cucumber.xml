@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="65.9182">
-<testcase classname="signin Test On Web Application" name="Data driving for valid sign-in test." time="24.314026">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="109.649602">
+<testcase classname="signin Test On Web Application" name="Data driving for valid sign-in test." time="67.428488">
 <system-out><![CDATA[Given Open the application url..............................................passed
 Then Click on Join now for free CTA.........................................passed
 Then Click on Sign up with Twitter account CTA..............................passed
@@ -10,26 +10,31 @@ Then Click on Login CTA.....................................................pass
 Then Click On Start your own campaign CTA...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="signin Test On Web Application" name="create new campaign" time="7.848077">
-<system-out><![CDATA[And Enter the charity amount "12"...........................................passed
-And Enter the campaign title "shadab".......................................passed
-And Enter the Find charity "qa".............................................passed
-And Enter the Description charity "test"....................................passed
-And Click the Next CTA......................................................passed
-And Enter the Topic Name "test".............................................passed
-And Click on create CTA.....................................................passed
-And Click on Edit campaign..................................................passed
+<testcase classname="signin Test On Web Application" name="create new campaign" time="29.402056">
+<system-out><![CDATA[And Enter the charity amount "15"...........................................passed
+And Enter the Campaign hashtags "shadab"....................................passed
+And Enter the Your rate for metting "2".....................................passed
+And Click on Create campaign CTA............................................passed
 And Click on Invite your team...............................................passed
+And Enter one or more email addresses "test@gmail.com"......................passed
+And Click invite the more user..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="signin Test On Web Application" name="update campaign" time="33.756097">
-<system-out><![CDATA[Then Back to campaigns page.................................................passed
-Then Search for existing campaigns..........................................passed
+<testcase classname="signin Test On Web Application" name="update campaign" time="12.819058">
+<failure message="org.junit.ComparisonFailure: expected:&lt;SHADAB[500]&gt; but was:&lt;SHADAB[12&#10;close]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at browserSetup.loginStep.Login_Step_definition.verify_the_Campaign_hashtags_name(Login_Step_definition.java:245)&#13;&#10;&#9;at ✽.Then verify the Campaign hashtags name.(src/test/resources/LoginTest.feature:31)&#13;&#10;"><![CDATA[Then Search for existing campaigns..........................................passed
 Then click on the edit campaign option......................................passed
-Then Update Amount..........................................................passed
-Then Chhose the Campaign image..............................................passed
-Then Chhose the Avatar image................................................passed
-Then click on save changes CTA..............................................passed
-]]></system-out>
+Then verify the charity Amount..............................................passed
+Then verify the Campaign hashtags name......................................failed
+Then Chhose the Campaign image..............................................skipped
+Then click on save changes CTA..............................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<SHADAB[500]> but was:<SHADAB[12
+close]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at browserSetup.loginStep.Login_Step_definition.verify_the_Campaign_hashtags_name(Login_Step_definition.java:245)
+	at ✽.Then verify the Campaign hashtags name.(src/test/resources/LoginTest.feature:31)
+]]></failure>
 </testcase>
 </testsuite>

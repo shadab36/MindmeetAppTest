@@ -1,88 +1,16 @@
 [
   {
-    "source": "^Chhose the Avatar image\\.$",
-    "steps": [
-      {
-        "name": "Chhose the Avatar image.",
-        "aggregatedDurations": {
-          "average": 6.9598223,
-          "median": 6.9598223
-        },
-        "durations": [
-          {
-            "duration": 6.9598223,
-            "location": "src/test/resources/LoginTest.feature:35"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Enter the Description charity \"([^\"]*)\"\\.$",
-    "steps": [
-      {
-        "name": "Enter the Description charity \"test\".",
-        "aggregatedDurations": {
-          "average": 0.3757197,
-          "median": 0.3757197
-        },
-        "durations": [
-          {
-            "duration": 0.3757197,
-            "location": "src/test/resources/LoginTest.feature:19"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Back to campaigns page\\.$",
-    "steps": [
-      {
-        "name": "Back to campaigns page.",
-        "aggregatedDurations": {
-          "average": 2.3283813,
-          "median": 2.3283813
-        },
-        "durations": [
-          {
-            "duration": 2.3283813,
-            "location": "src/test/resources/LoginTest.feature:30"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on save changes CTA\\.$",
-    "steps": [
-      {
-        "name": "click on save changes CTA.",
-        "aggregatedDurations": {
-          "average": 4.3745645,
-          "median": 4.3745645
-        },
-        "durations": [
-          {
-            "duration": 4.3745645,
-            "location": "src/test/resources/LoginTest.feature:36"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "source": "^Click on Login CTA\\.$",
     "steps": [
       {
         "name": "Click on Login CTA.",
         "aggregatedDurations": {
-          "average": 7.5226233,
-          "median": 7.5226233
+          "average": 6.6979861,
+          "median": 6.6979861
         },
         "durations": [
           {
-            "duration": 7.5226233,
+            "duration": 6.6979861,
             "location": "src/test/resources/LoginTest.feature:9"
           }
         ]
@@ -95,31 +23,31 @@
       {
         "name": "Click on Invite your team.",
         "aggregatedDurations": {
-          "average": 2.4137231,
-          "median": 2.4137231
+          "average": 23.4698807,
+          "median": 23.4698807
         },
         "durations": [
           {
-            "duration": 2.4137231,
-            "location": "src/test/resources/LoginTest.feature:24"
+            "duration": 23.4698807,
+            "location": "src/test/resources/LoginTest.feature:20"
           }
         ]
       }
     ]
   },
   {
-    "source": "^Enter the campaign title \"([^\"]*)\"\\.$",
+    "source": "^Enter the Your rate for metting \"([^\"]*)\"\\.$",
     "steps": [
       {
-        "name": "Enter the campaign title \"shadab\".",
+        "name": "Enter the Your rate for metting \"2\".",
         "aggregatedDurations": {
-          "average": 0.3907145,
-          "median": 0.3907145
+          "average": 0.4757788,
+          "median": 0.4757788
         },
         "durations": [
           {
-            "duration": 0.3907145,
-            "location": "src/test/resources/LoginTest.feature:17"
+            "duration": 0.4757788,
+            "location": "src/test/resources/LoginTest.feature:18"
           }
         ]
       }
@@ -131,12 +59,12 @@
       {
         "name": "Click on Sign up with Twitter account CTA.",
         "aggregatedDurations": {
-          "average": 4.5383173,
-          "median": 4.5383173
+          "average": 6.5714653,
+          "median": 6.5714653
         },
         "durations": [
           {
-            "duration": 4.5383173,
+            "duration": 6.5714653,
             "location": "src/test/resources/LoginTest.feature:6"
           }
         ]
@@ -149,12 +77,12 @@
       {
         "name": "Enter email address as \"test.shadab@gmail.com\".",
         "aggregatedDurations": {
-          "average": 0.4301044,
-          "median": 0.4301044
+          "average": 0.3975682,
+          "median": 0.3975682
         },
         "durations": [
           {
-            "duration": 0.4301044,
+            "duration": 0.3975682,
             "location": "src/test/resources/LoginTest.feature:7"
           }
         ]
@@ -167,12 +95,12 @@
       {
         "name": "Click on Join now for free CTA.",
         "aggregatedDurations": {
-          "average": 2.3758497,
-          "median": 2.3758497
+          "average": 5.1287517,
+          "median": 5.1287517
         },
         "durations": [
           {
-            "duration": 2.3758497,
+            "duration": 5.1287517,
             "location": "src/test/resources/LoginTest.feature:5"
           }
         ]
@@ -183,14 +111,14 @@
     "source": "^Enter the charity amount \"([^\"]*)\"\\.$",
     "steps": [
       {
-        "name": "Enter the charity amount \"12\".",
+        "name": "Enter the charity amount \"15\".",
         "aggregatedDurations": {
-          "average": 0.6486377,
-          "median": 0.6486377
+          "average": 0.8301198,
+          "median": 0.8301198
         },
         "durations": [
           {
-            "duration": 0.6486377,
+            "duration": 0.8301198,
             "location": "src/test/resources/LoginTest.feature:16"
           }
         ]
@@ -198,18 +126,54 @@
     ]
   },
   {
-    "source": "^Enter the Find charity \"([^\"]*)\"\\.$",
+    "source": "^Enter the Campaign hashtags \"([^\"]*)\"\\.$",
     "steps": [
       {
-        "name": "Enter the Find charity \"qa\".",
+        "name": "Enter the Campaign hashtags \"shadab\".",
         "aggregatedDurations": {
-          "average": 0.5774351,
-          "median": 0.5774351
+          "average": 0.410242,
+          "median": 0.410242
         },
         "durations": [
           {
-            "duration": 0.5774351,
-            "location": "src/test/resources/LoginTest.feature:18"
+            "duration": 0.410242,
+            "location": "src/test/resources/LoginTest.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Enter one or more email addresses \"([^\"]*)\"\\.$",
+    "steps": [
+      {
+        "name": "Enter one or more email addresses \"test@gmail.com\".",
+        "aggregatedDurations": {
+          "average": 0.4126727,
+          "median": 0.4126727
+        },
+        "durations": [
+          {
+            "duration": 0.4126727,
+            "location": "src/test/resources/LoginTest.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^verify the charity Amount\\.$",
+    "steps": [
+      {
+        "name": "verify the charity Amount.",
+        "aggregatedDurations": {
+          "average": 1.1994468,
+          "median": 1.1994468
+        },
+        "durations": [
+          {
+            "duration": 1.1994468,
+            "location": "src/test/resources/LoginTest.feature:30"
           }
         ]
       }
@@ -221,12 +185,12 @@
       {
         "name": "Open the application url.",
         "aggregatedDurations": {
-          "average": 7.0899579,
-          "median": 7.0899579
+          "average": 30.5584496,
+          "median": 30.5584496
         },
         "durations": [
           {
-            "duration": 7.0899579,
+            "duration": 30.5584496,
             "location": "src/test/resources/LoginTest.feature:4"
           }
         ]
@@ -234,36 +198,18 @@
     ]
   },
   {
-    "source": "^Click on Edit campaign\\.$",
+    "source": "^Click invite the more user\\.$",
     "steps": [
       {
-        "name": "Click on Edit campaign.",
+        "name": "Click invite the more user.",
         "aggregatedDurations": {
-          "average": 1.5140031,
-          "median": 1.5140031
+          "average": 0.2301002,
+          "median": 0.2301002
         },
         "durations": [
           {
-            "duration": 1.5140031,
-            "location": "src/test/resources/LoginTest.feature:23"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click the Next CTA\\.$",
-    "steps": [
-      {
-        "name": "Click the Next CTA.",
-        "aggregatedDurations": {
-          "average": 0.1944576,
-          "median": 0.1944576
-        },
-        "durations": [
-          {
-            "duration": 0.1944576,
-            "location": "src/test/resources/LoginTest.feature:20"
+            "duration": 0.2301002,
+            "location": "src/test/resources/LoginTest.feature:22"
           }
         ]
       }
@@ -275,49 +221,31 @@
       {
         "name": "Search for existing campaigns.",
         "aggregatedDurations": {
-          "average": 6.7156187,
-          "median": 6.7156187
+          "average": 10.214496,
+          "median": 10.214496
         },
         "durations": [
           {
-            "duration": 6.7156187,
-            "location": "src/test/resources/LoginTest.feature:31"
+            "duration": 10.214496,
+            "location": "src/test/resources/LoginTest.feature:28"
           }
         ]
       }
     ]
   },
   {
-    "source": "^Click on create CTA\\.$",
+    "source": "^Click on Create campaign CTA\\.$",
     "steps": [
       {
-        "name": "Click on create CTA.",
+        "name": "Click on Create campaign CTA.",
         "aggregatedDurations": {
-          "average": 1.3254327,
-          "median": 1.3254327
+          "average": 3.5732618,
+          "median": 3.5732618
         },
         "durations": [
           {
-            "duration": 1.3254327,
-            "location": "src/test/resources/LoginTest.feature:22"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Update Amount\\.$",
-    "steps": [
-      {
-        "name": "Update Amount.",
-        "aggregatedDurations": {
-          "average": 0.5733617,
-          "median": 0.5733617
-        },
-        "durations": [
-          {
-            "duration": 0.5733617,
-            "location": "src/test/resources/LoginTest.feature:33"
+            "duration": 3.5732618,
+            "location": "src/test/resources/LoginTest.feature:19"
           }
         ]
       }
@@ -329,31 +257,13 @@
       {
         "name": "click on the edit campaign option.",
         "aggregatedDurations": {
-          "average": 1.0702898,
-          "median": 1.0702898
+          "average": 1.3211595,
+          "median": 1.3211595
         },
         "durations": [
           {
-            "duration": 1.0702898,
-            "location": "src/test/resources/LoginTest.feature:32"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Chhose the Campaign image\\.$",
-    "steps": [
-      {
-        "name": "Chhose the Campaign image.",
-        "aggregatedDurations": {
-          "average": 11.734059,
-          "median": 11.734059
-        },
-        "durations": [
-          {
-            "duration": 11.734059,
-            "location": "src/test/resources/LoginTest.feature:34"
+            "duration": 1.3211595,
+            "location": "src/test/resources/LoginTest.feature:29"
           }
         ]
       }
@@ -365,12 +275,12 @@
       {
         "name": "Click On Start your own campaign CTA.",
         "aggregatedDurations": {
-          "average": 1.9798691,
-          "median": 1.9798691
+          "average": 17.7625685,
+          "median": 17.7625685
         },
         "durations": [
           {
-            "duration": 1.9798691,
+            "duration": 17.7625685,
             "location": "src/test/resources/LoginTest.feature:10"
           }
         ]
@@ -383,31 +293,13 @@
       {
         "name": "Enter the Password \"shadabsha@123\".",
         "aggregatedDurations": {
-          "average": 0.377304,
-          "median": 0.377304
+          "average": 0.3116989,
+          "median": 0.3116989
         },
         "durations": [
           {
-            "duration": 0.377304,
+            "duration": 0.3116989,
             "location": "src/test/resources/LoginTest.feature:8"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Enter the Topic Name \"([^\"]*)\"\\.$",
-    "steps": [
-      {
-        "name": "Enter the Topic Name \"test\".",
-        "aggregatedDurations": {
-          "average": 0.4079536,
-          "median": 0.4079536
-        },
-        "durations": [
-          {
-            "duration": 0.4079536,
-            "location": "src/test/resources/LoginTest.feature:21"
           }
         ]
       }
